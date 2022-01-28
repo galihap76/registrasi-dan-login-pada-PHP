@@ -4,7 +4,7 @@ $conn = mysqli_connect("localhost", "root", "", "blog");
 
 //registrasi 
 function registrasi($data){
-    //fungsi global agar mengambil objek $conn agar menangkap variabel global ($conn)
+    //fungsi global agar menangkap variabel global ($conn)
 	global $conn;
 	 //ambil data dari form registrasi
 	$username = stripslashes(mysqli_real_escape_string($conn, $data["username"]));
